@@ -8,6 +8,7 @@ create table diretor(
     nome_diretor varchar(50),
     data_N_D date
   );
+  select * from diretor;
 
 -- Jeovana
     create table ator(
