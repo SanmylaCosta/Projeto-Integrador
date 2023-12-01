@@ -79,7 +79,7 @@ create table diretor(
 -- Sanmyla
   create table assinatura(
     cod_assinatura int primary key,
-    duracao varchar(50),
+    duracao int,
     forma_pgto varchar(50),
     data_assinatura date,
     cod_usuario int,
