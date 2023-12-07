@@ -1,4 +1,4 @@
-use cinemando;
+
 Create database cinemando;
 use cinemando;
 
@@ -79,7 +79,7 @@ create table diretor(
 -- Sanmyla
   create table assinatura(
     cod_assinatura int primary key,
-    duracao int,
+    duracao  date,
     forma_pgto varchar(50),
     data_assinatura date,
     cod_usuario int,
@@ -235,17 +235,18 @@ insert into plano (cod_plano, nome_plano)
   (6, "Teste Gratis");
 
  -- Jeovana
+ select * from assinatura;
 insert into assinatura (cod_assinatura, data_assinatura, duracao, forma_pgto, cod_usuario, cod_plano) 
-  values (1,  "2023-01-20", 365, "cartão de debito", 6, 1),
-  (2, "2021-09-25", 90, "cartão de debito", 10, 2),
-  (3, "2023-05-28", 30, "cartão de credita.o", 7, 3),
-  (4, "2022-07-01", 30, "cartão de credito", 4, 4),
-  (5, "2020-03-02", 90, "cartão de debito", 8, 5),
-  (6, "2021-10-14", 14, "cartão de credito", 9, 6),
-  (7, "2021-10-14", 30, "cartão de credito", 3, 4),
-  (8, "2021-10-14", 90, "cartão de credito", 1, 2),
-  (9, "2021-10-14", 14, "cartão de credito", 5, 6),
-  (10, "2021-10-14", 365, "cartão de credito", 2, 1);
+  values (1,  "2023-01-20", current_date(), "cartão de debito", 6, 1),
+  (2, "2021-09-25",  current_date(), "cartão de debito", 10, 2),
+  (3, "2023-05-28", current_date(), "cartão de credita.o", 7, 3),
+  (4, "2022-07-01", current_date(), "cartão de credito", 4, 4),
+  (5, "2020-03-02", current_date(), "cartão de debito", 8, 5),
+  (6, "2021-10-14", current_date(), "cartão de credito", 9, 6),
+  (7, "2021-10-14", current_date(), "cartão de credito", 3, 4),
+  (8, "2021-10-14", current_date(), "cartão de credito", 1, 2),
+  (9, "2021-10-14", current_date(), "cartão de credito", 5, 6),
+  (10, "2021-10-14", current_date(), "cartão de credito", 2, 1);
 
 
 -- Anne
