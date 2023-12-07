@@ -192,7 +192,7 @@ a.*, timestampdiff (day, current_date(), duracao)
 from
 assinatura a
 inner join plano p on p.cod_plano = a.cod_plano
-where p.nome_plano = var_nome_plano;
+where p.nome_plano = varNomePlano;
 end $
 DELIMITER ;
 
