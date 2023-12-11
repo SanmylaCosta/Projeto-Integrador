@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+
+    <script>
+    </script>
+    
+    <style>
+
+        body{
+            background-image: linear-gradient(to bottom right, blue, blueviolet);
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, blue, blueviolet);
+            
+        }
+        #submit{
+            color: rgb(5, 5, 5);
+            width: 100px;
+        }
+        #form{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+
 </head>
 <body>
-    <h1>eu vou fazer um formulario de login</h1>
+    <div id="dform">
+        <form id="form" action="#">
+            <h1> Entrar </h1>
+            <input type="text" placeholder="Email ou número de telefone">
+            <br><br>
+            <input type="text" placeholder="Senha">
+            <p><input id="submit" type="submit" value="enviar"></p>
+            Novo por aqui? <a class target="self" href="assine.html">Assine agora</a>
+        </form>
+        
+    </div>
+    
 </body>
 </html>
