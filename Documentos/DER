@@ -1,0 +1,53 @@
+Filmes - Cinemando
+Anne, Jeovana, Sanmyla, Yasmin
+
+Cinemando: 
+a) O sistema “Cinemando”, é um aplicativo que está sendo desenvolvido e tem o intuito de providenciar para os usuários a experiência de ver filmes por meio de recomendações do próprio sistema.
+Para acessar o sistema, o usuário deve realizar um pagamento, mensal ou anual.
+
+● O usuário tem uma conta, com as seguintes informações: login, senha, data de nascimento, email e telefone.
+O usuário pode avaliar os filmes, identificando a data da avaliação, e a nota 1 a 5 estrelas, e essa avaliação só acontece se o usuário informar que já assistiu o filme.
+
+● Os filmes contém as seguintes informações: nome, elenco, classificação indicativa, gênero,  sinopse,  data de lançamento nacional, produtora, trailer. O filme possui um diretor. Para cada filme é necessário de um a vários gêneros.
+
+● O diretor possui as seguintes informações: código do diretor, nome e data de nascimento.
+
+● O filme possui um roteirista, que contém as informações: data de nascimento
+
+● Os filmes possuem um gênero, para cada gênero são armazenados nome e descrição. Cada gênero pode conter vários filmes.
+
+● O usuário possui um plano que inclui: assinatura, duração e sua renovação.
+
+Modelo conceitual do sistema
+
+
+
+Modelo lógico relacional do sistema em forma textual
+
+Diretor (cod_diretor, nome_diretor, data_N_D)
+Ator(cod_ator, nome, data_N_A)
+Usuario(cod_usuario, nome_usuario, login, senha, data_N, email, tel_usuario)
+Roteirista(cod_roteirista, nome_roteirista, data_N_R)
+Filme(cod_filme, nome_filme, classific_indicativa, sinopse, data_lancamento, produtora, link_ trailer, cod_diretor)
+cod_diretor referencia Diretor
+Avaliacao(cod_avaliacao, nota, data_avaliacao, cod_filme, cod_usuario)
+cod_filme referencia Filme
+cod_usuario referencia Usuario
+Plano ( cod_plano, nome_plano)
+Assinatura(cod_assinatura, cod_usuario, cod_plano, duracao, forma_pgto, data_pgto)
+cod_plano referencia Plano
+cod_usuario referencia usuario
+Genero(cod_genero, nome_genero, descricao)
+Genero_filme(cod_generofilme, cod_filme, cod_genero)
+cod_genero referencia Genero
+cod_filme referencia Filme
+Ator_filme(cod_atorfilme, cod_filme, cod_autor)
+cod_filme referencia Filme
+cod_ator referencia Ator
+Roteirista_filme(cod_roteiristafilme, cod_roteirista, cod_filme)
+cod_filme referencia Filme
+cod_roteirista referencia Roteirista
+Assistiu_filme(cod_assistiu, data_assistiu, horario_A, cod_filme, cod_usuario)
+cod_usuario referencia Usuario
+cod_filme referencia Filme
+
