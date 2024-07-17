@@ -168,6 +168,19 @@ VALUES
     ("A Vida É Bela", "12", "Durante a Segunda Guerra Mundial, na Itália, um homem judeu usa seu incrível senso de humor para proteger seu filho dos horrores do campo de concentração. É um conto emocionante sobre o poder do amor e da esperança.", "1997-12-20", "Melampo Cinematografica", "https://www.youtube.com/watch?v=64ZoO7oiN0s"),
     ("Frozen II", "L", "Em Frozen II, Elsa e Anna embarcam em uma jornada perigosa mas notável. Elsa, motivada por uma voz misteriosa, procura descobrir a verdade sobre seus poderes mágicos e salvar seu reino.", "2019-11-22", "Walt Disney Animation Studios", "https://www.youtube.com/watch?v=eSLe4HuKuK0");
 
+-- Inserts para a tabela avaliacao
+insert into avaliacao (avaliCod, avaliNota, avaliData, filmeCod, usuCod)
+  values (1, 5, '2022-03-20', 1, 1),
+   (2, 1, '2022-07-26', 2, 2),
+   (3, 3, '2023-03-17', 3, 3),
+   (4, 3, '2023-05-30', 4, 4),
+   (5, 1, '2023-05-03', 5, 5),
+   (6, 4, '2022-09-15', 6, 6),
+   (7, 2, '2022-10-25', 7, 7),
+   (8, 3, '2019-12-12', 8, 8),
+   (9, 4, '2023-06-19', 9, 9),
+   (10, 5, '2017-03-10', 10, 10);
+   
 -- Inserts para a tabela genero
 INSERT INTO Genero (genNome, descricao)
 VALUES 
