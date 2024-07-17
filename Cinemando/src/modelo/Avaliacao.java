@@ -1,15 +1,29 @@
 package modelo;
+
 import modelo.Usuario;
 import modelo.Filme;
+
 public class Avaliacao {
+
+
 
     private Integer avaliCod;
     private Integer avaliNota;
     private String avaliData;
-    private Usuario usuario; 
+    private Usuario usuario;
     private Filme filme;
-      
-    public Avaliacao() {
+
+    @Override
+    public String toString() {
+        return "Avaliacao [avaliCod=" + avaliCod + ", avaliNota=" + avaliNota + ", avaliData=" + avaliData
+                + ", usuario=" + usuario + ", filme=" + filme + "]";
+    }
+    public Avaliacao(Integer avaliCod, Integer avaliNota, String avaliData, Usuario usuario, Filme filme) {
+        this.avaliCod = avaliCod;
+        this.avaliNota = avaliNota;
+        this.avaliData = avaliData;
+        this.usuario = usuario;
+        this.filme = filme;
     }
     
     public Integer getAvaliCod() {
@@ -30,29 +44,22 @@ public class Avaliacao {
     public void setAvaliData(String avaliData) {
         this.avaliData = avaliData;
     }
-     public Usuario getUsuario() {
+    public Usuario getUsuario() {
         return usuario;
     }
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
-    
-    public Filme getfilme() {
+    public Filme getFilme() {
         return filme;
     }
-    public void setfilme(Filme filme) {
+    public void setFilme(Filme filme) {
         this.filme = filme;
     }
-    
-    public Avaliacao(Integer avaliCod, Integer avaliNota, String avaliData, Usuario usuario, Filme filme) {
-        this.avaliCod = avaliCod;
-        this.avaliNota = avaliNota;
-        this.avaliData = avaliData;
-        this.usuario = usuario;
-        this.filme = filme;
-    }
+
 
    
     
     
+
 }
