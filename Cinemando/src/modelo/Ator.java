@@ -1,34 +1,46 @@
-package domain;
-
-import java.util.Date;
+package modelo;
 
 public class Ator {
+    
+    private Integer  atorCod;
+    private String atorNome;
+    private String atorDataN;
 
-    private Integer cod_ator;
-    private String nome_ator;
-    private Date data_N_A;
-    public Integer getCod_ator() {
-        return cod_ator;
+    public Ator() {
     }
-    public void setCod_ator(Integer cod_ator) {
-        this.cod_ator = cod_ator;
+    
+    public Integer getAtorCod() {
+        return  atorCod;
     }
-    public String getNome_ator() {
-        return nome_ator;
+    
+    public void setAtorCod(Integer atorCod) {
+        this.atorCod = atorCod;
     }
-    public void setNome_ator(String nome_ator) {
-        this.nome_ator = nome_ator;
+    
+    public String getAtorNome() {
+        return atorNome;
     }
-    public Date getData_N_A() {
-        return data_N_A;
+    
+    public void setAtorNome(String atorNome) {
+        this.atorNome = atorNome;
     }
-    public void setData_N_A(Date data_N_A) {
-        this.data_N_A = data_N_A;
+    
+    public String getAtorDataN() {
+        return atorDataN;
     }
-    @Override
-    public String toString() {
-        return "Ator [cod_ator=" + cod_ator + ", nome_ator=" + nome_ator + ", data_N_A=" + data_N_A + "]";
+    
+    public void setAtorDataN(String atorDataN) {
+        this.atorDataN = atorDataN;
+    }
+   
+    public Ator(Integer atorCod, String atorNome,String atorDataN) {
+        this.atorCod = atorCod;
+        this.atorNome = atorNome;
+        this.atorDataN = atorDataN;
+        
     }
 
+   
+    
     
 }
