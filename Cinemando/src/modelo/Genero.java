@@ -1,54 +1,39 @@
-package domain;
+package modelo;
 
 public class Genero {
 
-    private Integer cod_genero;
-    private String nome_genero;
+    private Integer genCod;
+    private String genNome;
     private String descricao;
 
-    
-    public Genero(Integer cod_genero, String nome_genero, String descricao) {
-        this.cod_genero = cod_genero;
-        this.nome_genero = nome_genero;
+    public Genero(Integer genCod, String genNome, String descricao) {
+        this.genCod = genCod;
+        this.genNome = genNome;
         this.descricao = descricao;
     }
 
-
-    public Integer getCod_genero() {
-        return cod_genero;
+    public Integer getGenCod() {
+        return genCod;
     }
-
-
-    public void setCod_genero(Integer cod_genero) {
-        this.cod_genero = cod_genero;
+    public void setRotCod(Integer genCod) {
+        this.genCod = genCod;
     }
-
-
-    public String getNome_genero() {
-        return nome_genero;
+    public String getGenNome() {
+        return genNome;
     }
-
-
-    public void setNome_genero(String nome_genero) {
-        this.nome_genero = nome_genero;
+    public void setGenNome(String genNome) {
+        this.genNome = genNome;
     }
-
-
     public String getDescricao() {
         return descricao;
     }
-
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
-
+    
     @Override
     public String toString() {
-        return "Genero [cod_genero=" + cod_genero + ", nome_genero=" + nome_genero + ", descricao=" + descricao + "]";
+        return "Genero [genCod=" + genCod + ", genNome=" + genNome + ", descricao=" + descricao + "]";
+
     }
-
-
-    
 }
