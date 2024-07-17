@@ -1,94 +1,87 @@
-package domain;
-
-import java.util.Date;
+package modelo;
 
 public class Filme {
-    private Integer codFilme;
-    private String nomeFilme;
-    private String classificacaoIndicativa;
-    private String sinopse;
-    private Date dataLancamento;
-    private String produtora;
-    private String linkTrailer;
-    private Diretor diretor;
+
+  private Integer filmeCod;
+  private String filmeNome;
+  private String filmeClaIndic;
+  private String filmeSinopse;
+  private String filmeDataL;
+  private String filmeProdu;
+  private String filmeTrailer;
+ 
+
+  public Filme() {
+  }
+
+  public Integer getFilmeCod() {
+    return filmeCod;
+  }
+
+  public void setFilmeCod(Integer filmeCod) {
+    this.filmeCod = filmeCod;
+  }
+
+  public String getFilmeNome() {
+    return filmeNome;
+  }
+
+  public void setFilmeNome(String filmeNome) {
+    this.filmeNome = filmeNome;
+  }
+
+  public String getFilmeClaIndic() {
+    return filmeClaIndic;
+  }
+
+  public void setFilmeClaIndic(String filmeClaIndic) {
+    this.filmeClaIndic = filmeClaIndic;
+  }
+
+  public String getFilmeSinopse() {
+    return filmeSinopse;
+  }
+
+  public void setFilmeSinopse(String filmeSinopse) {
+    this.filmeSinopse = filmeSinopse;
+  }
+
+  public String getFilmeDataL() {
+    return filmeDataL;
+  }
+
+  public void setFilmeDataL(String filmeDataL) {
+    this.filmeDataL = filmeDataL;
+  }
+
+  public String getFilmeProdu() {
+    return filmeProdu;
+  }
+
+  public void setFilmeProdu(String filmeProdu) {
+    this.filmeProdu = filmeProdu;
+  }
+
+  public String getFilmeTrailer() {
+    return filmeTrailer;
+  }
+
+  public void setFilmeTrailer(String filmeTrailer) {
+    this.filmeTrailer = filmeTrailer;
+  }
 
 
-    public Filme(Integer codFilme, String nomeFilme, String classificacaoIndicativa, String sinopse, 
-                 Date dataLancamento, String produtora, String linkTrailer, Diretor
-             diretor) {
-        this.codFilme = codFilme;
-        this.nomeFilme = nomeFilme;
-        this.classificacaoIndicativa = classificacaoIndicativa;
-        this.sinopse = sinopse;
-        this.dataLancamento = dataLancamento;
-        this.produtora = produtora;
-        this.linkTrailer = linkTrailer;
-        this.diretor = diretor;
-    }
+  public Filme(Integer filmeCod, String filmeNome, String filmeClaIndic, String filmeSinopse, String filmeDataL,
+      String filmeProdu, String filmeTrailer) {
+    this.filmeCod = filmeCod;
+    this.filmeNome = filmeNome;
+    this.filmeClaIndic = filmeClaIndic;
+    this.filmeSinopse = filmeSinopse;
+    this.filmeDataL = filmeDataL;
+    this.filmeProdu = filmeProdu;
+    this.filmeTrailer = filmeTrailer;
 
+  }
+  
 
-    public Integer getCodFilme() {
-        return codFilme;
-    }
-
-    public void setCodFilme(Integer codFilme) {
-        this.codFilme = codFilme;
-    }
-
-    public String getNomeFilme() {
-        return nomeFilme;
-    }
-
-    public void setNomeFilme(String nomeFilme) {
-        this.nomeFilme = nomeFilme;
-    }
-
-    public String getClassificacaoIndicativa() {
-        return classificacaoIndicativa;
-    }
-
-    public void setClassificacaoIndicativa(String classificacaoIndicativa) {
-        this.classificacaoIndicativa = classificacaoIndicativa;
-    }
-
-    public String getSinopse() {
-        return sinopse;
-    }
-
-    public void setSinopse(String sinopse) {
-        this.sinopse = sinopse;
-    }
-
-    public Date getDataLancamento() {
-        return dataLancamento;
-    }
-
-    public void setDataLancamento(Date dataLancamento) {
-        this.dataLancamento = dataLancamento;
-    }
-
-    public String getProdutora() {
-        return produtora;
-    }
-
-    public void setProdutora(String produtora) {
-        this.produtora = produtora;
-    }
-
-    public String getLinkTrailer() {
-        return linkTrailer;
-    }
-
-    public void setLinkTrailer(String linkTrailer) {
-        this.linkTrailer = linkTrailer;
-    }
-
-    public Diretor getDiretor() {
-        return diretor;
-    }
-
-        public void setDiretor(Diretor diretor) {
-            this.diretor = diretor;
-        }
-    
 }
