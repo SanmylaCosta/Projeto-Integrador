@@ -3,32 +3,32 @@ package modelo;
 
 public class Roteirista {
 
-    private Integer rotCod;
+    private int rotCod;
     private String rotNome;
     private String rotDataN;
 
-    public Roteirista(Integer rotCod, String rotNome, String rotDataN) {
+    public Roteirista(int rotCod, String rotNome, String rotDataN) {
         this.rotCod = rotCod;
         this.rotNome = rotNome;
         this.rotDataN = rotDataN;
     }
 
-    public Integer getRotCod() {
+    public int getRotCod() {
         return rotCod;
     }
-    public void setRotCod(Integer rotCod) {
+    public void setRotCod(int rotCod) {
         this.rotCod = rotCod;
     }
     public String getRotNome() {
         return rotNome;
     }
-    public void setNome_roteirista(String rotNome) {
+    public void setRotNome(String rotNome) {
         this.rotNome = rotNome;
     }
-    public String getrotDataN() {
+    public String getRotDataN() {
         return rotDataN;
     }
-    public void setrotDataN(String rotDataN) {
+    public void setRotDataN(String rotDataN) {
         this.rotDataN = rotDataN;
     }
     @Override
