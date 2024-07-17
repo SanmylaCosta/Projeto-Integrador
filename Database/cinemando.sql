@@ -2,21 +2,21 @@ CREATE DATABASE cinemando;
 USE cinemando;
 
 -- Sanmyla
-CREATE TABLE diretor(
+CREATE TABLE Diretor(
     dirCod INT PRIMARY KEY AUTO_INCREMENT,
     dirNome VARCHAR(50),
     dirDataN DATE
 );
 
 -- Jeovana
-CREATE TABLE ator(
+CREATE TABLE Ator(
     atorCod INT PRIMARY KEY AUTO_INCREMENT,
     atorNome VARCHAR(50),
     atorDataN DATE
 );
 
 -- Anne
-CREATE TABLE usuario(
+CREATE TABLE Usuario(
     usuCod INT PRIMARY KEY AUTO_INCREMENT,
     usuNome VARCHAR(50),
     usuLogin VARCHAR(50),
@@ -27,14 +27,14 @@ CREATE TABLE usuario(
 );
 
 -- Yasmin
-CREATE TABLE roteirista(
+CREATE TABLE Roteirista(
     rotCod INT PRIMARY KEY AUTO_INCREMENT,
     rotNome VARCHAR(50),
     rotDataN DATE
 );
 
 -- Yasmin
-CREATE TABLE filme(
+CREATE TABLE Filme(
     filmeCod INT PRIMARY KEY AUTO_INCREMENT,
     filmeNome VARCHAR(50),
     filmeClaIndic CHAR(2),
@@ -45,7 +45,7 @@ CREATE TABLE filme(
 );
 
 -- Sanmyla
-CREATE TABLE avaliacao(
+CREATE TABLE Avaliacao(
     avaliCod INT PRIMARY KEY AUTO_INCREMENT,
     avaliNota INT,
     avaliData DATE,
@@ -56,14 +56,14 @@ CREATE TABLE avaliacao(
 );
 
 -- Anne
-CREATE TABLE genero(
+CREATE TABLE Genero(
     genCod INT PRIMARY KEY AUTO_INCREMENT,
     genNome VARCHAR(50),
     descricao TEXT
 );
 
 -- Anne
-CREATE TABLE generoFilme(
+CREATE TABLE GeneroFilme(
     genFilmeCod INT PRIMARY KEY AUTO_INCREMENT,
     filmeCod INT,
     genCod INT,
@@ -72,7 +72,7 @@ CREATE TABLE generoFilme(
 );
 
 -- Yasmin
-CREATE TABLE atorFilme(
+CREATE TABLE AtorFilme(
     atorFilmeCod INT PRIMARY KEY AUTO_INCREMENT,
     filmeCod INT,
     atorCod INT,
@@ -81,7 +81,7 @@ CREATE TABLE atorFilme(
 );
 
 -- Yasmin
-CREATE TABLE roteiristaFilme(
+CREATE TABLE RoteiristaFilme(
     rotFilmeCod INT PRIMARY KEY AUTO_INCREMENT,
     rotCod INT,
     filmeCod INT,
@@ -90,7 +90,7 @@ CREATE TABLE roteiristaFilme(
 );
 
 -- Sanmyla
-CREATE TABLE diretorFilme(
+CREATE TABLE DiretorFilme(
     dirFilmeCod INT PRIMARY KEY AUTO_INCREMENT,
     dirCod INT,
     filmeCod INT,
@@ -99,7 +99,7 @@ CREATE TABLE diretorFilme(
 );
 
 -- Inserts para a tabela diretor
-INSERT INTO diretor (dirNome, dirDataN)
+INSERT INTO Diretor (dirNome, dirDataN)
 VALUES 
     ("Peter Ramsey", "1962-12-23"),
     ("Donald Petrie", "1954-04-02"),
@@ -113,7 +113,7 @@ VALUES
     ("Chris Buck", "1958-02-24");
 
 -- Inserts para a tabela ator
-INSERT INTO ator (atorNome, atorDataN)
+INSERT INTO Ator (atorNome, atorDataN)
 VALUES 
     ("Shameik Moore", "1995-04-05"),
     ("Emma Roberts", "1991-02-10"),
@@ -127,7 +127,7 @@ VALUES
     ("Idina Menzel", "1971-05-30");
 
 -- Inserts para a tabela usuario
-INSERT INTO usuario (usuNome, usuLogin, usuSenha, usuDataN, usuEmail, usuTel)
+INSERT INTO Usuario (usuNome, usuLogin, usuSenha, usuDataN, usuEmail, usuTel)
 VALUES 
     ('Luna Sanchez', 'soyluna', 'L2006U', '2006-07-24', 'soyluna@gmail.com', '(11) 98765-4321'),
     ('Railander Hilux', 'luxlander', 'raice28', '2000-03-15', 'railux@yahoo.com', '(21) 12345-6789'),
@@ -141,7 +141,7 @@ VALUES
     ('Violet Baudelaire', 'violet', 'vks3', '2000-02-18', 'baudelaire@yahoo.com', '(81) 41837-5926');
 
 -- Inserts para a tabela roteirista
-INSERT INTO roteirista (rotNome, rotDataN)
+INSERT INTO Roteirista (rotNome, rotDataN)
 VALUES 
     ("Phil Lord", "1975-07-12"),
     ("Vinay Virmani", "1985-01-24"),
@@ -155,7 +155,7 @@ VALUES
     ("Jennifer Lee", "1971-10-22");
 
 -- Inserts para a tabela filme
-INSERT INTO filme (filmeNome, filmeClaIndic, filmeSinopse, filmeDataL, filmeProdu, filmeTrailer)
+INSERT INTO Filme (filmeNome, filmeClaIndic, filmeSinopse, filmeDataL, filmeProdu, filmeTrailer)
 VALUES 
     ("Homem-Aranha no Aranhaverso", "L", "Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.", "2019-01-10", "Sony Pictures Entertainment", "https://www.youtube.com/watch?v=SS6ABPkfmBE"),
     ("Amor em Little Italy", "12", "Nikki é uma talentosa chef que trabalha em Londres. Ao voltar à pizzaria da família em Little Italy, Canadá, ela inicia um romance com seu amigo de infância. Mas há um problema: Léo é o filho do inimigo de sua família", "2018-08-24", "Voltage Pictures", "https://www.youtube.com/watch?v=jLhU0MaSTcI"),
@@ -169,7 +169,7 @@ VALUES
     ("Frozen II", "L", "Em Frozen II, Elsa e Anna embarcam em uma jornada perigosa mas notável. Elsa, motivada por uma voz misteriosa, procura descobrir a verdade sobre seus poderes mágicos e salvar seu reino.", "2019-11-22", "Walt Disney Animation Studios", "https://www.youtube.com/watch?v=eSLe4HuKuK0");
 
 -- Inserts para a tabela genero
-INSERT INTO genero (genNome, descricao)
+INSERT INTO Genero (genNome, descricao)
 VALUES 
     ("Ação", "Filmes com muita adrenalina e emoção."),
     ("Romance", "Histórias de amor e relacionamentos."),
@@ -183,7 +183,7 @@ VALUES
     ("Animação", "Filmes animados e para todas as idades.");
 
 -- Inserts para a tabela generoFilme
-INSERT INTO generoFilme (filmeCod, genCod)
+INSERT INTO GeneroFilme (filmeCod, genCod)
 VALUES 
     (1, 1), (1, 5), (1, 10),
     (2, 2), (2, 3), (2, 5),
@@ -197,7 +197,7 @@ VALUES
     (10, 1), (10, 6), (10, 10);
 
 -- Inserts para a tabela atorFilme
-INSERT INTO atorFilme (filmeCod, atorCod)
+INSERT INTO AtorFilme (filmeCod, atorCod)
 VALUES 
     (1, 1),
     (2, 2),
@@ -211,7 +211,7 @@ VALUES
     (10, 10);
 
 -- Inserts para a tabela roteiristaFilme
-INSERT INTO roteiristaFilme (rotCod, filmeCod)
+INSERT INTO RoteiristaFilme (rotCod, filmeCod)
 VALUES 
     (1, 1),
     (2, 2),
@@ -225,7 +225,7 @@ VALUES
     (10, 10);
 
 -- Inserts para a tabela diretorFilme
-INSERT INTO diretorFilme (dirCod, filmeCod)
+INSERT INTO DiretorFilme (dirCod, filmeCod)
 VALUES 
     (1, 1),
     (2, 2),
