@@ -48,7 +48,6 @@ CREATE TABLE Filme(
 CREATE TABLE Avaliacao(
     avaliCod INT PRIMARY KEY AUTO_INCREMENT,
     avaliNota INT,
-    avaliData DATE,
     filmeCod INT,
     usuCod INT,
     FOREIGN KEY(filmeCod) REFERENCES filme(filmeCod),
