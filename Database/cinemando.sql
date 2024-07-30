@@ -168,7 +168,7 @@ VALUES
     ("Frozen II", "L", "Em Frozen II, Elsa e Anna embarcam em uma jornada perigosa mas notável. Elsa, motivada por uma voz misteriosa, procura descobrir a verdade sobre seus poderes mágicos e salvar seu reino.", "2019-11-22", "Walt Disney Animation Studios", "https://www.youtube.com/watch?v=eSLe4HuKuK0");
 
 -- Inserts para a tabela avaliacao
-insert into avaliacao (avaliCod, avaliNota, avaliData, filmeCod, usuCod)
+insert into avaliacao (avaliCod, avaliNota, filmeCod, usuCod)
   values (1, 5, 1, 1),
    (2, 1, 2, 2),
    (3, 3, 3, 3),
