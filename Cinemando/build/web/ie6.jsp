@@ -1,0 +1,6 @@
+<style>    
+    .play {
+            background-image:none;
+            filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/image-hover.png', sizingMethod='image');
+    }
+</style>
