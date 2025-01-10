@@ -189,4 +189,4 @@ VALUES
     (8, 8),
     (9, 9),
     (10, 10);
-select * from filme;
+
