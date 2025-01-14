@@ -4,13 +4,13 @@ USE cinemando;
 CREATE TABLE Diretor(
     dirCod INT PRIMARY KEY AUTO_INCREMENT,
     dirNome VARCHAR(50),
-    dirDataN DATE
+    dirDataN VARCHAR(50)
 );
 
 CREATE TABLE Ator(
     atorCod INT PRIMARY KEY AUTO_INCREMENT,
     atorNome VARCHAR(50),
-    atorDataN DATE
+    atorDataN VARCHAR(50)
 );
 
 CREATE TABLE Usuario(
@@ -18,7 +18,7 @@ CREATE TABLE Usuario(
     usuNome VARCHAR(50),
     usuLogin VARCHAR(50),
     usuSenha CHAR(20),
-    usuDataN DATE,
+    usuDataN VARCHAR(50),
     usuEmail VARCHAR(50),
     usuTel CHAR(20)
 );
@@ -26,7 +26,7 @@ CREATE TABLE Usuario(
 CREATE TABLE Roteirista(
     rotCod INT PRIMARY KEY AUTO_INCREMENT,
     rotNome VARCHAR(50),
-    rotDataN DATE
+    rotDataN VARCHAR(50)
 );
 
 CREATE TABLE Filme(
@@ -35,7 +35,7 @@ CREATE TABLE Filme(
     filmeGenero VARCHAR(50),
     filmeClaIndic CHAR(2),
     filmeSinopse TEXT,
-    filmeDataL DATE,
+    filmeDataL VARCHAR(50),
     filmeProdu VARCHAR(50),
     filmeTrailer VARCHAR(80)
 );
